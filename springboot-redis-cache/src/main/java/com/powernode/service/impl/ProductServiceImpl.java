@@ -28,7 +28,7 @@ public class ProductServiceImpl implements ProductService {
                     System.out.println("从数据库获得数据");
                     redisTemplate.opsForValue().set("product",product);
                 }else {
-                    System.out.println("从缓存中获取..." + System.currentTimeMillis());
+                    System.out.println("从缓存中获取1..." + System.currentTimeMillis());
                 }
             }
         }else {
