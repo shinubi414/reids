@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/springboot-redis/springboot-redis.iml" filepath="$PROJECT_DIR$/springboot-redis/springboot-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-redis-cache/springboot-redis-cache.iml" filepath="$PROJECT_DIR$/springboot-redis-cache/springboot-redis-cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-redis-purchase/springboot-redis-purchase.iml" filepath="$PROJECT_DIR$/springboot-redis-purchase/springboot-redis-purchase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-redis2/springboot-redis2.iml" filepath="$PROJECT_DIR$/springboot-redis2/springboot-redis2.iml" />
+    </modules>
+  </component>
+</project>

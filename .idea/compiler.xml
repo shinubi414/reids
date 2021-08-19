@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springboot-redis" />
+        <module name="springboot-redis-cache" />
+        <module name="springboot-redis-purchase" />
+        <module name="springboot-redis2" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springboot-redis" target="1.8" />
+      <module name="springboot-redis-cache" target="1.8" />
+      <module name="springboot-redis-purchase" target="1.8" />
+      <module name="springboot-redis2" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springboot-redis" options="-parameters" />
+      <module name="springboot-redis-cache" options="-parameters" />
+      <module name="springboot-redis-purchase" options="-parameters" />
+      <module name="springboot-redis2" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(function () {
+            $("#btnPurchase").click(function () {
+                for (var i = 1;i <= 500;i++){
+                    $.post("/purchase",{id:1,quantity:1},function (data) {
+                        console.log(data);
+                    })
+                }
+            })
+
+            $("#btnAddRedis").click(function () {
+                $.post("/addRedis",{id:1},function (data) {
+                    alert(data)
+                })
+            })
+
+            $("#btnPurchaseRedis").click(function (data) {
+                for (var i = 1;i <= 500;i++){
+                    $.post("/purchaseRedis",{id:1,quantity:1},function (data) {
+                        console.log(data);
+                    })
+                }
+            })
+
+            $('#btnAddDb').click(function () {
+                $.post("/addDb",function (data) {
+                    console.log(data);
+                })
+            })
+
+        })
+    </script>
+</head>
+<body>
+    <input type="button" value="点击抢购" id="btnPurchase">
+    <input type="button" value="点击添加Redis缓存" id="btnAddRedis">
+    <input type="button" value="点击抢购Redis版" id="btnPurchaseRedis">
+    <input type="button" value="同步数据库" id="btnAddDb">
+
+</body>
+</html>
